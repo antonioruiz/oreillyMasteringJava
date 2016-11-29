@@ -1,8 +1,9 @@
 package com.oreilly.interfaces;
 
 import java.time.LocalDate;
+import java.util.Comparator;
 
-public class Task {
+public class Task implements Comparable<Task>{
 	
 	private int id;
 	private String name;
@@ -85,6 +86,11 @@ public class Task {
 	public String toString() {
 		return "Task {id=" + id + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate + ", priority="
 				+ priority + ", completed=" + completed + "}";
+	}
+
+	@Override
+	public int compareTo(Task otherTask) {
+		return name.compareTo(otherTask.name);
 	}
 	
 

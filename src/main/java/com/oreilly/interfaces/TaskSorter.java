@@ -21,11 +21,10 @@ public class TaskSorter {
 		
 		tasks.forEach(System.out::println);
 		Collections.sort(tasks);
+		System.out.println("");
 		System.out.println("After natural sort order:");
 		tasks.forEach(System.out::println);
-		
-		
+				
 	}
 	
-
 }

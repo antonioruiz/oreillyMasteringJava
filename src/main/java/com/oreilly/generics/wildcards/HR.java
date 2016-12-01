@@ -14,6 +14,8 @@ public class HR {
 		employees.stream()
 				.map(Employee::getName)
 				.forEach(System.out::println);
+		//employees.add(new Employee("Fred"));
+		//employees.add(new Salaried("Barnie"));
 	}
 	
 	public static void printAllFiltered(

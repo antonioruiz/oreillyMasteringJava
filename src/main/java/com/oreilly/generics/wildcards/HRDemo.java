@@ -13,10 +13,13 @@ public class HRDemo {
 				new Salaried("Kyle"), new Salaried("Stan"),
 				new Salaried("Kenny"), new Salaried("Cartman"));
 		System.out.println(employees);
+		System.out.println("-------");
 		System.out.println(salarieds);
 		
 		HR.printEmpNames(employees);
+		System.out.println("-------");
 		HR.printEmpAndSubclassNames(salarieds);
+		System.out.println("-------");
 		HR.printAllFiltered(employees, 
 				e -> e.toString().length() % 2 == 0);
 	}
